@@ -35,6 +35,8 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
             this.txtIndext = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAdd
@@ -61,7 +63,6 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 20);
             this.txtName.TabIndex = 2;
-           
             // 
             // btnEdit
             // 
@@ -97,13 +98,34 @@
             this.txtIndext.Name = "txtIndext";
             this.txtIndext.Size = new System.Drawing.Size(100, 20);
             this.txtIndext.TabIndex = 2;
-            
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(517, 170);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 81);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "thêm list box";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(517, 67);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(91, 81);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "thêm list";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtIndext);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lstNames);
@@ -127,6 +149,8 @@
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.TextBox txtIndext;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
